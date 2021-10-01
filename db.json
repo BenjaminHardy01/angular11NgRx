@@ -1,19 +1,68 @@
 {
-  "posts": [
+  "products": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "name": "Computer",
+      "price": 350,
+      "quantity": 7,
+      "selected": true,
+      "available": true
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "name": "Printer",
+      "price": 400,
+      "quantity": 10,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "Bic",
+      "price": "500",
+      "quantity": 8,
+      "selected": false,
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "Latte",
+      "price": 300,
+      "quantity": 8,
+      "selected": true,
+      "available": true
+    },
+    {
+      "name": "g",
+      "price": 0,
+      "quantity": 0,
+      "selected": false,
+      "available": true,
+      "id": 14
+    },
+    {
+      "name": "hardy",
+      "price": 0,
+      "quantity": 0,
+      "selected": false,
+      "available": true,
+      "id": 15
+    },
+    {
+      "id": 16,
+      "name": "benji k",
+      "price": 0,
+      "quantity": 0,
+      "selected": false,
+      "available": true
+    },
+    {
+      "name": "p",
+      "price": 0,
+      "quantity": 0,
+      "selected": false,
+      "available": true,
+      "id": 17
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
