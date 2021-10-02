@@ -5,13 +5,13 @@
   <td>{{product.quantity}}</td>
   <td>{{product.selected}}</td>
   <td>{{product.available}}</td>
-  <!--<td>
-    <button (click)="onSelect(p)" [ngClass]="p.selected?'btn-success': 'btn-danger'"  class=" btn-sm">
-      <span *ngIf="p.selected">Unselect</span>
-      <span *ngIf="!p.selected">select</span>
+  <td>
+    <button (click)="onSelect(product)" [ngClass]="product.selected?'btn-success': 'btn-danger'"  class="btn btn-sm">
+      <span *ngIf="product.selected">Unselect</span>
+      <span *ngIf="!product.selected">select</span>
     </button>
   </td>
-  <td>
+<!--  <td>
     <button (click)="onDelete(p)" class="btn btn-danger">
       <span class="fa fa-trash-o"></span>
     </button>

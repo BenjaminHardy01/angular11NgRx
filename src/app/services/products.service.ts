@@ -28,10 +28,15 @@ export class ProductsService {
     return this.http.get<Product[]>(host+"/products?name_like="+keyword);
   }
 
-  selectProducts(product:Product):Observable<Product>{
+  selectProduct(product:Product):Observable<Product>{
     let host = environment.host;
     product.selected=!product.selected;
-    return this.http.put<Product>(host+"/products/"+product.id,product);
+    return this.http.put<Product>(host+"/products/"+product.id, product);
+  }
+
+  setSelected(product:Product):Observable<Product>{
+    let host = environment.host;
+    return this.http.put<Product>(host+"/products/"+product.id,{...product});
   }
 
   deleteProducts(product:Product):Observable<void>{
